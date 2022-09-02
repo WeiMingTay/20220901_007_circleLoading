@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: darkslategray;
+}
+section {
+    margin: 20vh auto;
+    background-color: #fff;
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes ladekreis {
+    0% {
+        stroke-dasharray: 1,20000;
+    }
+    40% {
+        stroke-dasharray: 180,20000;
+    }
+    80% {
+        stroke-dasharray: 359,20000;
+    }
+    90% {
+        stroke-dasharray: 180,20000;
+    }
+    100% {
+        stroke-dasharray: 1,20000;
+    }
+}
+svg {
+    animation-name: ladekreis;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+
+}
